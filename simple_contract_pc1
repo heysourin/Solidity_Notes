@@ -1,0 +1,28 @@
+// SPDX-License-Identifier: MIT
+pragma solidity 0.8.8;
+
+contract ownable{
+    address public owner;
+
+    constructor(){
+        owner =msg.sender;//'msg.sender' gives the addressof deployer, its a global variable
+    }
+
+    modifier onlyOwner(){
+        require(msg.sender==owner, "Not owner");//checkcs if owner sending the message
+        _;//move on if the above line is executing
+    }
+
+    function setOwner(address _newOwner) public onlyOwner{
+        require(_newOwner!=address(0),"Invalid Address");//it means there must be some address, cant be zero only
+        owner=_newOwner;
+    }
+
+    function onlyOwnerCanAccess() public onlyOwner{
+        //code
+    }
+
+    function anyOneCanAccess() public{
+        //code
+    }
+}

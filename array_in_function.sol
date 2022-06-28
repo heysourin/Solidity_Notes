@@ -1,13 +1,13 @@
 // SPDX-License-Identifier: MIT
-pragma solidity >=0.5.0 < 0.9.0;
+pragma solidity >=0.5.0 <0.9.0;
 
+contract funcy{
+    
+    function createAArray() public pure returns(uint){
+        uint[] memory arrmatha= new uint[](3);
+        //only fixed sized array can be created in memory
 
-contract fixesizedarray1{
-    function arrCreate() public pure returns(uint){
-
-        uint[] memory arrayMemory=new uint[](3);
-
-        arrayMemory[2]=30;
-        return arrayMemory[2];
+        arrmatha[0]=10;
+        return arrmatha[0];
     }
 }

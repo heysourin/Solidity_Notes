@@ -6,6 +6,8 @@ contract _mapping{
 
     function input(uint roll, string memory name) public{
         student[roll]=name;
+    //  variable[key]=value;
+
     }
 }
 // we can do the same using array, but in that case there will be

@@ -17,4 +17,20 @@ contract advMapping{
     function delete_info() public{
         delete acc_info[msg.sender];
     }
+    
+}
+
+
+// ANOTHER PROGAM:
+struct Student{
+    string adrs;
+    string name;
+    uint marks;
+}
+ contract demo2{
+    mapping(uint=>Student) public student;
+
+    function setData(uint _roll,uint _marks, string memory _adrs, string memory _name) public {
+        student[_roll]=Student(_adrs,_name,_marks);
+    }
 }

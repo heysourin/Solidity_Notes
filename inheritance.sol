@@ -20,7 +20,7 @@ contract A{
 
 
 
-// We want: a contract B with all the contracts of A,
+// We want: a contract B with all the features of A,
 // and also we want to manipulate func4()
 
 //So to make contract A, parent of contract B,
@@ -32,12 +32,12 @@ contract B is A{
 //In contract B we are writing 'override' in place of 'virtual' 
 //This way you can access the datas of A and will have to edit minimum
 
-function func3() public pure override returns(string memory){
+ function func3() public pure override returns(string memory){
         return "I'm in contract B";
     }
 
 
-function func4() public pure virtual override returns(string memory){
+ function func4() public pure virtual override returns(string memory){
         return "I'm in contract B";
     }
 // Virtual keyword in func4() in contract B is again allowingit to edit in its child

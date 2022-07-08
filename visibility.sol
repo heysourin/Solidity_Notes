@@ -41,7 +41,7 @@ contract A{
         return x;// it can return x,y,z
     }
 
-
+//notice: using another function inside, still u can write 'pure' type;
     function checkFunc1() public pure returns(string memory){
         return check1();
     }
@@ -50,23 +50,30 @@ contract A{
     }
 
 //not possible:
-    // function checkFunc3() public view returns(string memory){
-    //     return check3();
-    // }
+//     function checkFunc3() public pure returns(string memory){
+//         return check3();
+//     }
+//  }
+
+//possible:
+    function checkFunc4() public pure returns(string memory){
+        return check4();
+    }
  }
 
 // A is the parent of B, B will contain properties of A
 contract B is A{
 
-//this will give error
+//this will give error:
     // string a=check1();
-//this is fine
+
+//this is fine:
     string public b=check2();
 
-//This will give error too
+//This will give error too:
     // string c=check3();
 
-//This is fine
+//This is fine:
     // string d=check4();
 }
 

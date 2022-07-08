@@ -5,6 +5,9 @@ pragma solidity ^0.8.8;
 //external: − External functions are meant to be called by other contracts.
 // They cannot be used for internal call. To call external function within contract 
 //this.function_name() call is required. State variables cannot be marked as external.
+//can't be accessed from derived contracts.
+//accessed from unrelated contract creating object.
+
 
 //public − Public functions/ Variables can be used both externally and internally.
 // For public state variable, Solidity automatically creates a getter function.
@@ -12,6 +15,11 @@ pragma solidity ^0.8.8;
 //internal − Internal functions/ Variables can only be used internally or by derived contracts.
 
 //private − Private functions/ Variables can only be used internally and not even by derived contracts.
+
+
+function funcFileLevel() pure returns(string memory){
+        return "I'm an external function";
+    }
 
 
 contract A{
@@ -82,8 +90,14 @@ contract C{
     A obj = new A();//creating object
     
     uint public a=obj.z();
-
+//Accessing the 'external' function from contract A
     function anotherCaller() public view returns(string memory){
         return obj.check3();
+    }
+   
+//accessing the function present at file level
+//Notice: u also use 'pure' here
+    function funcCheckFileLevel() public pure returns(string memory){
+        return funcFileLevel();
     }
 }

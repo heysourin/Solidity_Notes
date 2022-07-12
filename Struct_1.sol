@@ -15,11 +15,7 @@ contract demo{
     }
 
     function change(uint _roll2, string memory _name2) public {
-        student memory new_student=student({
-            roll:_roll2,
-            name:_name2
-        });
-
+        student memory new_student=student({roll:_roll2, name:_name2});
         s1=new_student;
     }
     

@@ -22,4 +22,10 @@ contract demo{
 
         s1=new_student;
     }
+    
+// or you can simply do
+     function dataManip(uint _roll2, string memory _name2) public{
+        s1.roll=_roll2;
+        s1.name=_name2;
+    }
 }

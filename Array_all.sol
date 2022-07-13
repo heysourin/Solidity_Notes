@@ -33,6 +33,19 @@ contract demo99{
     // function popArr() public {
     //     arr2.pop();
     // }
-}
+    
+    
+ //*********using string********
+ 
+contract demon33{
+//     string[3] public str1;
 
+//     function addingArray() public returns(uint[3] memory, string[3] memory) {
+//         uint[3] memory arr33=[uint(21),22,33];
+        
+//         str1 =[string ("denver"), "max", "nairobi"];
+
+//         return (arr33,str1);
+//     }
+// }
 

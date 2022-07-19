@@ -7,16 +7,16 @@ pragma solidity ^0.8.8;
 //this.function_name() call is required. State variables cannot be marked as external.
 //can't be accessed from derived contracts.
 //accessed from unrelated contract creating object.
-
-
+//
 //public − Public functions/ Variables can be used both externally and internally.
 // For public state variable, Solidity automatically creates a getter function.
-
+//
 //internal − Internal functions/ Variables can only be used internally or by derived contracts.
-
+//
 //private − Private functions/ Variables can only be used internally and not even by derived contracts.
-
-
+//
+//POTENTIAL Callers: 4 Types:
+//Type 1: Contract itself... Type 2: Derived contract...Type 3: Another contract...Type 4: Outside the world(eg in left side bar)
 function funcFileLevel() pure returns(string memory){
         return "I'm an external function";
     }

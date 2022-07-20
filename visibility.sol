@@ -2,11 +2,12 @@
 pragma solidity ^0.8.8;
 
 //Note:
-//external: − External functions are meant to be called by other contracts.
-// They cannot be used for internal call. To call external function within contract 
-//this.function_name() call is required. State variables cannot be marked as external.
-//can't be accessed from derived contracts.
-//accessed from unrelated contract creating object.
+//external: − •External functions are meant to be called by other contracts.
+//•They cannot be used for internal call. 
+//•To call external function within contract this.function_name() call is required. •State variables cannot be marked as external.
+//•Can't be accessed from derived contracts.accessed from unrelated contract creating object.
+//•A button created in the left bar after deploying.
+//
 //
 //public − Public functions/ Variables can be used both externally and internally.
 // For public state variable, Solidity automatically creates a getter function.

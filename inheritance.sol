@@ -21,7 +21,7 @@ contract A{
 
 
 // We want: a contract B with all the features of A,
-// and also we want to manipulate func4()
+// and also we want to manipulate func3(),func4()
 
 //So to make contract A, parent of contract B,
 //this is way B will achieve all the public variables/functions of A
@@ -49,6 +49,7 @@ contract C is B{
 //Datas inheritated from B, which were inheritated from A and ulaltered
 // will still show 'I'm in contract A', ie func1() and func2() in this case
 // so C becomes the grandchild of A
+//func4() is manipulated here
 
  function func4() public pure override returns(string memory){
         return "I'm in contract C";

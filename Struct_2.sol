@@ -9,7 +9,16 @@ contract structie{
     }
 
     Emp public emp;//Value of rio/'emp3' has been pushed
-    Emp[] public empArr;
+
+    Emp[] public empArr;//creating an empty array, values will be pushed later
+
+
+//Before calling the 'setValue' function it will be its default value
+    constructor(string memory _name, uint _age,  address _acc){
+        emp.age=_age;
+        emp.name=_name;
+        emp.acc=_acc;
+    }
     
     function setValues() public{
 //we can set values in three ways
@@ -41,6 +50,16 @@ contract structie{
 //Pusing value into array by another way(without creating variable)
 // Going to 3rd index in this case
         empArr.push(Emp("Helsinki",33,msg.sender));
+
+//Updating value:
+        Emp storage emp_temp =emp;
+        emp_temp.name="Denver";
+
     }
 
+
+//printing the whole array:
+    function seeArr() public view returns(Emp[] memory){
+        return empArr;
+    } 
 }

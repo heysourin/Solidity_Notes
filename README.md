@@ -6,6 +6,7 @@ Job of a solidity developer is to make the contract in such a way that it consum
 
 2. private < internal < external < public
 
+3. The more 'stuff' you do, more gas is going to be consumed.
 Note: State variables are by default: Internal
 and functions are by default: Public
 

@@ -12,9 +12,9 @@ and functions are by default: Public
 
 
 **Color:
-Red: Payable
-Blue: View/Pure function, State variable
-Orange: Simple/transactional function
+1.Red: Payable
+2.Blue: View/Pure function, State variable
+3.Orange: Simple/transactional function
 
 
 **EVM can access and store information in six places:

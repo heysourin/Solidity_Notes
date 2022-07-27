@@ -15,3 +15,12 @@ and functions are by default: Public
 Red: Payable
 Blue: View/Pure function, State variable
 Orange: Simple/transactional function
+
+
+**EVM can access and store information in six places:
+1. Stack
+2. Memory
+3. Storage
+4. Calldata
+5. Code
+6. Logs

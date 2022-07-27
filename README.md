@@ -10,11 +10,13 @@ Job of a solidity developer is to make the contract in such a way that it consum
 Note: State variables are by default: Internal
 and functions are by default: Public
 
+!!View and pure doesnot cost gas when called alone, If a gas calling function calls a view
+or pure function only then will it cost gas
 
 **Color:
-1.Red: Payable
-2.Blue: View/Pure function, State variable
-3.Orange: Simple/transactional function
+1. Red: Payable
+2. Blue: View/Pure function, State variable
+3. Orange: Simple/transactional function
 
 
 **EVM can access and store information in six places:

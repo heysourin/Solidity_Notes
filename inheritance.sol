@@ -15,7 +15,6 @@ contract A{
         return "I'm in contract A";
     }
 }
-
  
 
 

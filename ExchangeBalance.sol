@@ -73,7 +73,7 @@ contract exchaging_ethers{
 
 
 
-//***************************Sending Ether from above contract to below contract***************************
+//**************************Sending Ether from above contract to below contract**************************
 
 contract getETH{
 

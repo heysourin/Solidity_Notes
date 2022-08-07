@@ -10,6 +10,8 @@ Job of a solidity developer is to make the contract in such a way that it consum
 Note: State variables are by default: Internal
 and functions are by default: Public
 
+4. Constant < Immutable < Simple (variables)
+
 !!View and pure doesnot cost gas when called alone, If a gas calling function calls a view
 or pure function only then will it cost gas
 

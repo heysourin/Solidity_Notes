@@ -17,3 +17,6 @@ contract demo{
         
     }
 }
+
+//Dont be confused
+///'abi.endode()' and 'abi.encodePacked()' gives different bytes output

@@ -11,7 +11,7 @@ contract StorageFactory {
 
 //***IMP***the below function is an example of how one contract can deploy another contract
     function createSimpleStorageContract() public {
-        SimpleStorage simpleStorage = new SimpleStorage(); //have to start with 'SimpleStorage' if you have not created a global variable in the very beggining
+        SimpleStorage simpleStorage = new SimpleStorage(); //have to start with 'SimpleStorage' if you have not created a global variable in the beginning
         simpleStorageArray.push(simpleStorage);
     }
     

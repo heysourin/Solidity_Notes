@@ -14,7 +14,7 @@ and functions are by default: Public
 
 5. calldata < memory 
 
-!!View and pure doesnot cost gas when called alone, If a gas calling function calls a view
+!!View and pure do not cost gas when called alone, If a gas calling function calls a view
 or pure function only then will it cost gas
 
 **Color:

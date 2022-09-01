@@ -3,8 +3,7 @@ contract NestedMapping {
     mapping(address => mapping(uint => bool)) public nested;
 
     function get(address _addr1, uint _num) public view returns (bool) {
-        // You can get values from a nested mapping
-        // even when it is not initialized
+        // You can get values from a nested mapping even when it is not initialized
         return nested[_addr1][_num];
     }
 

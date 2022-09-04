@@ -11,7 +11,11 @@ contract _require{
     // }
 
 // Revert: revert means undo in state varible
+//** Revert is used for complex cases.
 
+
+//****Using revert with error *****
+//you can learn error comparing it with 'events'
     // error throwError();
     error throwError(string, address);
 
@@ -24,8 +28,8 @@ contract _require{
         }
     }
 
-    function onlyOwner() public{
 
+    function onlyOwner() public{
         if(owner!=msg.sender){
             revert ("You are not the owner");
         }

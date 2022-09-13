@@ -15,3 +15,15 @@ contract NestedMapping {
         delete nested[_addr1][_num];
     }
 }
+__________________________________________________________________________________
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.13;
+
+contract NestedMapping {
+    // Nested mapping (mapping from address to another mapping)
+    mapping(address => mapping(uint => string)) public Data;
+
+    function setData(address _adrs,uint num, string memory _str) public{
+        Data[_adrs][num] = _str;
+    }
+}

@@ -23,7 +23,6 @@ contract Strings {
             str_bytes[k] = str_bytes2[i];
             k++;
         }
-
         return string(str_bytes);
     }
 }

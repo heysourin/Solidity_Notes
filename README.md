@@ -14,6 +14,10 @@ and functions are by default: Public
 
 5. calldata < memory 
 
+6. Sometimes using bit shift operator in place of multiplication can save gas
+
+7. ++i < i++ ( gas cost)
+
 !!View and pure do not cost gas when called alone, If a gas calling function calls a view
 or pure function only then will it cost gas
 
@@ -30,3 +34,4 @@ or pure function only then will it cost gas
 4. Calldata
 5. Code
 6. Logs
+

@@ -19,14 +19,14 @@ pragma solidity ^0.8.8;
 //POTENTIAL Callers: 4 Types:
 //Type 1: Contract itself... Type 2: Derived contract...Type 3: Another contract...Type 4: Outside the world(eg in left side bar)
 
-//                     Public      private     internal    external
-//outside world         ✔️                                   ✔️
+//                     Public      Private     Internal    External
+//External world        ✔️                                   ✔️
 //
-//within contract       ✔️          ✔️          ✔️
+//Internal Call         ✔️          ✔️          ✔️
 //
-//Derived contract      ✔️                      ✔️          ✔️
+//Derived Contract      ✔️                      ✔️          
 //
-//other contracts       ✔️                                   ✔️
+//Other contracts       ✔️                                   ✔️
 
 
 

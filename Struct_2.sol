@@ -51,12 +51,11 @@ contract structie{
 // Going to 3rd index in this case
         empArr.push(Emp("Helsinki",33,msg.sender));
 
-//Updating value:
-        Emp storage emp_temp =emp;
+//Updating value: Updating the value of state variable 'emp'
+        Emp storage emp_temp = emp;
         emp_temp.name="Denver";
 
     }
-
 
 //printing the whole array:
     function seeArr() public view returns(Emp[] memory){

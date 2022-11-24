@@ -8,7 +8,7 @@ contract structie{
         address acc;
     }
 
-    Emp public emp;//Value of rio/'emp3' has been pushed
+    Emp public emp;//Value of 'emp3' has been pushed
 
     Emp[] public empArr;//creating an empty array, values will be pushed later
 
